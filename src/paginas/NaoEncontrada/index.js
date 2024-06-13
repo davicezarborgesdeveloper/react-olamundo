@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function NaoEncontrada() {
     const navegar = useNavigate();
+
     return (
         <>
             <div className={styles.conteudoContainer}>
@@ -24,8 +25,11 @@ export default function NaoEncontrada() {
 
                 <div
                     className={styles.botaoContainer}
-                    onClick={() => navegar(-1)}>
-                    <BotaoPrincipal tamanho="lg"> Voltar</BotaoPrincipal>
+                    onClick={() => navegar(-1)}
+                >
+                    <BotaoPrincipal tamanho="lg">
+                        Voltar
+                    </BotaoPrincipal>
                 </div>
 
                 <img
